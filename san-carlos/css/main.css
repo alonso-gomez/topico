@@ -1,0 +1,27 @@
+body {
+	background: #eae9e4 url('../images/bgMain.jpg') no-repeat top;
+	margin: 0; 
+}
+
+#wrapper_main {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header_title {
+	width: 295px;
+	height: 140px;
+	background-color: white;
+	margin: 0;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+
+
+
+
+.hidden {
+	visibility: hidden;
+}
