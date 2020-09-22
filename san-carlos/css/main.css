@@ -9,6 +9,11 @@ body {
 	margin-right: auto;
 }
 
+#header {
+	position: relative;
+	height: 490px;
+}
+
 #header_title {
 	width: 295px;
 	height: 140px;
@@ -16,6 +21,30 @@ body {
 	margin: 0;
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
+	box-shadow: 10px 10px 16px -4px rgba(0,0,0,0.75);
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	z-index: 1;
+}
+
+#redes_sociales {
+	width: 530px;
+	height: 35px;
+	background-color: #fff;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#header_slider {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: solid #fff 13px;
+	border-radius: 8px;
 }
 
 
