@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
 body {
+	font-family: 'Open Sans';
 	background: #eae9e4 url('../images/bgMain.jpg') no-repeat top;
-	margin: 0; 
+	margin: 0;
+	font-size: 10px;
 }
 
 #wrapper_main {
@@ -29,14 +33,23 @@ body {
 }
 
 #redes_sociales {
-	width: 530px;
-	height: 35px;
+	width: 490px;
+	height: 20px;
 	background-color: #fff;
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
 	position: absolute;
 	top: 0;
 	right: 0;
+	font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    color: #333;
+    padding: 5px 20px 10px 20px;
+}
+
+#redes_sociales img {
+	vertical-align: bottom;
 }
 
 #header_slider {
