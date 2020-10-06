@@ -96,9 +96,53 @@ body {
 	left: 0px;
 }
 
+#menu_content {
+	font-family: 'Caveat';
+	font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#menu_content li {
+	display: inline-block;
+	position: relative;
+}
+
+#menu_content li ul {
+	display: none;
+}
+
+#menu_content li:hover ul {
+	display: block;
+	position: absolute;
+	top: 15px;
+	left: 5px;
+}
+
+#menu_content li:hover ul li {
+	display: block;
+	width: 300px;
+	background-color: #00f;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+#menu_content a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#menu_content a:hover {
+	color: #ec8d1b;
+}
 
 
 
 .hidden {
 	visibility: hidden;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
