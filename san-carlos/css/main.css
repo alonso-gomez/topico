@@ -117,6 +117,7 @@ body {
 	top: 25px;
 	left: 5px;
 	background-color: #1db2ea;
+	z-index: 1;
 }
 
 #menu_content li:hover ul li {
@@ -135,13 +136,25 @@ body {
 	color: #ec8d1b;
 }
 
+#content {
+	padding: 85px 20px 0 20px;
+    width: 660px;
+    color: #666;
+    font-weight: lighter;
+}
+
+#content h2:first-child {
+	margin-top: 0;
+}
+
 #sidebar {
 	width: 270px;
 	background-color: #f00;
 	height: 700px;
 	float: right;
-	position: relative;
+	position: absolute;
 	top: -25px;
+	right: 0;
 	padding: 30px 15px;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
@@ -167,17 +180,76 @@ body {
 
 #eventos_mes {
 	position: absolute;
-	top: 10px;
-	right: 20px;
-	font-weight: 400;
+    top: 0px;
+    right: 14px;
+    font-weight: 400;
     color: rgba(255,255,255,0.8);
     font-size: 23px;
     letter-spacing: -1px;
     text-transform: lowercase;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: -1px;
 }
 
 #eventos_cal {
 	background-color: rgba(255,255,255,0.5);
+	padding: 10px;
+}
+
+#eventos_cal li {
+	height: 40px;
+	margin-bottom: 10px;
+	background: url('../images/bgFecha.png') no-repeat left;
+	padding-left: 50px;
+	position: relative;
+}
+
+.cal_event_title {
+	font-size: 15px;
+	letter-spacing: -1px;
+}
+
+.cal_event_location {
+	font-size: 14px;
+	color: #333;
+	letter-spacing: -1px;
+	font-weight: lighter;
+}
+
+.cal_event_date {
+	font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 40px;
+    text-align: center;
+    letter-spacing: -2px;
+}
+
+#eventos_cal a {
+	text-decoration: none;
+	color: #f7c42b;
+}
+
+#eventos_cal a:hover {
+	text-decoration: underline;
+}
+
+#events_more {
+	margin-top: 0;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+#events_more a {
+	color: #f72b2b;
+	text-decoration: none;
+}
+
+#events_more a:hover {
+	text-decoration: underline;
 }
 
 
