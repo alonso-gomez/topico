@@ -79,7 +79,6 @@ body {
 }
 
 #wrapper_body {
-	height: 1000px;
 	background-color: #fff;
 	border-radius: 8px;
 	margin-top: 35px;
@@ -99,12 +98,13 @@ body {
 #menu_content {
 	font-family: 'Caveat';
 	font-size: 20px;
-    letter-spacing: 1px;
+    padding-left: 23px;
 }
 
 #menu_content li {
 	display: inline-block;
 	position: relative;
+	padding-top: 5px;
 }
 
 #menu_content li ul {
@@ -251,6 +251,34 @@ body {
 #events_more a:hover {
 	text-decoration: underline;
 }
+
+.aside_left {
+	float: left;
+	width: 190px;
+	margin-right: 10px;
+}
+
+.aside_right {
+	float: right;
+	width: 190px;
+	margin-left: 10px;
+}
+
+.aside_left img, .aside_right img {
+	border: solid 10px #efefef;
+}
+
+.cita {
+	font-size: 20px;
+    font-style: italic;
+    color: #a7a5a5;
+}
+
+.cita > p:first-letter {
+	font-size: 50px;
+}
+
+
 
 
 .hidden {
