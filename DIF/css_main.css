@@ -1,0 +1,725 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*--------------ESTILOS DE ETIQUETAS------------------*/
+
+body {
+	background: url(images/bg.gif) repeat;	
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;	
+}
+
+p {
+	margin-bottom: 20px;	
+}
+
+p:last-child {
+	margin-bottom: 0;	
+}
+
+
+
+
+/*--------------WRAPPER PRINCIPAL------------------*/
+
+
+#wrapperMain {
+	margin: 0 auto;
+	width: 750px;
+	padding: 0 10px;
+	background: #fff;	
+}
+
+
+
+/*--------------AREA DE ENCABEZADO------------------*/
+
+#wrapperHeader {
+	width: 750px;
+	position: relative;	
+}
+
+#contactanos {
+	position: absolute;
+	top: 0;	
+	right: 0;
+	background: url(images/mail_icon.gif) no-repeat right;
+	padding-right: 20px;
+	font-size: 12px;
+	color: #666; 
+}
+
+#contactanos a {
+	color: inherit;
+	text-decoration: none;	
+}
+
+#contactanos a:hover {
+	color: #F90;
+}
+
+
+#header {
+	width: 750px;
+	height: 212px;
+	background: url(images/encabezado.jpg) no-repeat 0 15px;
+	padding-top: 15px;	
+}
+
+#homeLink {
+	display: block;
+	width: 297px;
+	height: 212px;	
+}
+
+
+
+/*--------------MENU PRINCIPAL------------------*/
+
+/*---Sin viñetas ni margenes para todos los ul dentro de mainNav (aplicado como clase) sin importar si son menu, submenu o sub-submenu---*/
+.ulReset {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;	
+}
+
+/*---Esto es para todos los li sin importar si son menu, submenu o sub-submenu---*/
+#mainNav li {
+	float: left;
+	height: 34px;
+	border-right: solid 1px #fff;
+	border-top: solid 1px #fff;
+	position: relative;	
+	z-index: 5;		
+}
+
+/*---Cambio de color gris---*/
+#mainNav li:hover {
+	background-color: #CCC;
+}
+
+/*---Todos los enlaces dentro de mainNav tendran este aspecto, en estilos posteriores se sobreescribiran algunas propiedades---*/
+#mainNav a {
+	width: 100%;
+	height: 14px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #FFF;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px 0;
+	display: block;
+}
+
+/*---Colores para los distintos menus---*/
+.navOrganizacion {
+	width: 116px;
+	background: #C5141C;
+}
+
+.navProgramas {
+	width: 107px;
+	background: #0C5AA7;
+}
+
+.navTramites {
+	width: 176px;
+	background: #7DB552;
+}
+
+.navPrensa {
+	width: 168px;
+	background: #FF9900;
+}
+
+/*---Use important porque border-right entra en conflicto con lo declarado en la regla #mainNav li la cual por tener ID es mas especifica---*/
+.navParticipa {
+	width: 179px;
+	background: #CC6699;
+	border-right: none !important;
+}
+
+/*---Primer submenu oculto por defecto y con un valor z-index igual que el li padre en la regla #mainNav li (pudo haber sido cualquier valor z-index, solo deben de ser iguales)---*/
+#mainNav li ul {
+	position: absolute;
+	top: 34px;
+	left: 0;
+	width: 300px;
+	display: none;
+	z-index: 5;
+}
+
+/*---Al pasar el cursor por el li padre del submenu, se cambia su visibilidad a block, es decir, se hace visible---*/
+#mainNav li:hover ul {
+	display: block;
+}
+
+/*---Aspecto de los elementos del submenu---*/
+#mainNav li ul li {
+	border: none;
+	float: none;
+	height: 25px;
+	font-size: 16px;
+	color: #FFF;
+	border-bottom: solid 1px #333;
+}
+
+/*---Aspecto de los enlaces del submenu, muchas propiedades se sobreescribieron de #mainNav a (por ejemplo text-align que era center, text-transform que eres uppercase, etc---*/
+#mainNav li ul li a {
+	text-align: left;
+	text-transform: none;
+	font-size: 11px;
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 6px;
+}
+
+/*---Submenu de los submenu o menus de tercer nivel---*/
+#mainNav li ul li ul {
+	position: absolute;
+	top: 0;
+	left: 300px;
+	width: 300px;
+	display: none !important;
+	z-index: 5;
+}
+
+#mainNav li ul li:hover ul {
+	display: block !important;
+}
+
+/*---Clase para aplicar la flecha que representa que un submenu tiene otro menu---*/
+.submenu {
+	background-image: url("images/submenu_arrow.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+
+/*--------------CONTENIDO------------------*/
+
+
+#wrapperContenido {
+	width: 750px;
+	background-color: #FFF;	
+}
+
+/*---Columna contenedora de toda el area izquierda (mensaje de la directora)---*/
+#columnaLeft {
+	width: 440px;
+	float: left;
+}
+
+/*---Titulo Bienvenidos a DIF Guaymas---*/
+.tituloMsg {
+	height: 33px;
+	font-size: 29px;
+	font-weight: normal;
+	color: #066;
+	letter-spacing: -1px;
+	position: relative;
+	top: 11px;
+}
+
+/*---Color de fondo para el mensaje---*/
+#mensaje {
+	width: 420px;
+	background-color: #EDEDED;
+	padding: 10px;	
+}
+
+.subtituloMsg {
+	font-size: 18px;
+	color: #066;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+
+/*---------------------SIDEBAR DERECHA------------------------*/
+
+
+/*---Columna contenedora de toda el area derecha (Eventos y enlaces)---*/
+#columnaRight {
+	width: 300px;
+	float: right;	
+}
+
+/*---Clase en comun para los titulos de la columna derecha (eventos y enlaces)---*/
+.tituloSidebar {
+	height: 33px;
+	font-size: 29px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	position: relative;
+	top: 5px;
+	text-align: right;
+}
+
+/*---Color de fondo para los eventos---*/
+#eventos {
+	width: 300px;
+	background-color: #F7F0D9;
+	margin-bottom: 10px;
+}
+#eventos{
+	width:  100%;
+	float: none;
+}
+#TituloEventosMQ{
+
+}
+#eventos img{
+	width: 51.72%;
+	height: auto;
+}
+#eventos h3 {
+	font-size: 11px;
+	color: #600;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+#eventos p {
+	margin-bottom: 15px;	
+}
+
+/*---Los eventos se estructuraran utilizando este id aplicado a UL porque SON UNA LISTA DE EVENTOS---*/
+
+#listaEventos li {
+	height: 150px;
+	line-height: 11px;
+}
+
+/*---Dos estilos (par e impar) para invertir los rellenos de los distintas opciones (imagen a la izquierda o a la derecha)---*/
+li.par  {
+	padding-right: 10px;	
+}
+
+li.impar  {
+	padding-left: 10px;
+}
+
+/*---Dos estilos para controlar para donde flota la imagen de eventos (left cuando es par y right cuando es impar---*/
+li.par img {
+	float: left;
+	margin-right: 10px;	
+}
+
+li.impar img {
+	float: right;
+	margin-left: 10px;	
+}
+
+/*---Aspecto de todos los enlaces que aparezcan dentro de eventos---*/
+#eventos a {
+	color: #600;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#eventos a:hover {
+	color: #333;
+}
+
+/*---Aspecto del contenedor para el area de enlaces---*/
+#enlaces {
+	width: 280px;
+	background-color: #E1E8E8;
+	padding: 10px;
+}
+
+#TituloEnlacesMQ{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#enlaces h3 {
+	font-size: 11px;
+	color: #600;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+/*---Al igual que los eventos, los enlaces se estructuran usando ul---*/
+
+#listaEnlaces li {
+	height: 79px;
+	clear: both;
+}
+
+#listaEnlaces li img {
+	float: left;
+	margin-right: 10px;	
+}
+
+#enlaces a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: inherit;	
+}
+
+
+/*---------------------FOOTER-------------------------*/
+
+#footer {
+	clear: both;
+	width: 100%;	
+	padding: 20px 0;
+	height: 66px;
+}
+
+#copyright {
+	margin: 20px;
+}
+
+
+
+
+
+.txtMain {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.txtColLeft {
+	font-size: 14px;
+	color: #333;
+	line-height: 20px;
+	font-weight: lighter;
+}
+
+.txtEvts {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.hidden {
+	visibility: hidden;	
+}
+
+.imgFloatLeft {
+	float: left;
+	margin-right: 8px;	
+}
+
+.txtFooter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;	
+}
+
+
+
+
+
+/* ----------- MEDIA QUERIES SHIT --------------- */
+
+/* --------- BREAKPOINT 600-770px --------------- */
+
+@media screen and (max-width: 770px) {
+
+#wrapperMain {
+	width: 97.4%;
+}
+
+#wrapperHeader {
+	width: 100%;
+}
+
+#header {
+	width: 100%;
+	height: auto;
+}
+
+.navOrganizacion {
+	width: 15.47%;
+}
+
+.navProgramas {
+	width: 14.27%;
+}
+
+.navTramites {
+	width: 23.47%;
+}
+
+.navPrensa {
+	width: 22.5%;
+}
+
+.navParticipa {
+	width: 23.6%;
+}
+
+#wrapperContenido {
+	width: 100%;
+}
+
+#columnaLeft {
+	width: 58.67%;
+}
+
+#columnaLeft img {
+	max-width: 100%;
+	height: auto;
+}
+
+#mensaje {
+	width: 95.45%;
+}
+
+#columnaRight {
+	width: 40%;
+}
+
+#eventos {
+	width: 100%;
+}
+
+#eventos img {
+	width: 51.72%;
+	height: auto;
+}
+
+#enlaces {
+	width: 93.33%;
+}
+
+#enlaces img {
+	width: 31.66%;
+	height: auto;
+}
+
+#footer {
+	width: 100%;
+}
+
+}
+
+
+/* ----------- COLAPSO --------------- */
+
+/* --------- BREAKPOINT 420-600px --------------- */
+
+@media screen and (max-width: 600px) {
+
+#wrapperMain {
+	width: 97.4%;
+}
+
+#wrapperHeader {
+	width: 100%;
+}
+
+#header {
+	width: 100%;
+	height: auto;
+}
+
+#mainNav a {
+	font-size: 11px;
+}
+
+.navOrganizacion {
+	width: 15.47%;
+}
+
+.navProgramas {
+	width: 14.27%;
+}
+
+.navTramites {
+	width: 23.47%;
+}
+
+.navPrensa {
+	width: 22.5%;
+}
+
+.navParticipa {
+	width: 23.3%;
+}
+
+#wrapperContenido {
+	width: 100%;
+}
+
+#columnaLeft {
+	width: 100%;
+}
+
+#columnaLeft img {
+	max-width: 100%;
+	height: auto;
+}
+
+#mensaje {
+	width: 95.45%;
+}
+
+#columnaRight {
+	float: none;
+	width: 100%;
+	clear: both;
+	position: relative;
+}
+
+#eventos {
+	width: 47.5%;
+	float: left;
+}
+
+#eventos img {
+	width: 51.72%;
+	height: auto;
+}
+
+.tituloEventosMQ {
+	text-align: left;
+	width: 200px;
+}
+
+#enlaces {
+	width: 47.5%;
+	float: right;
+}
+
+#enlaces img {
+	width: 31.66%;
+	height: auto;
+}
+
+.tituloEnlacesMQ {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#footer {
+	width: 100%;
+}
+
+}
+
+
+
+/* ----------- COLAPSO Y FIJO --------------- */
+
+/* --------- BREAKPOINT 420px --------------- */
+
+
+@media screen and (max-width: 420px) {
+
+#wrapperMain {
+	width: 100%;
+	padding: 0;
+}
+
+#wrapperHeader {
+	width: 100%;
+}
+
+#header {
+	width: 100%;
+	height: auto;
+}
+
+#mainNav a {
+	font-size: 8px;
+}
+
+.navOrganizacion {
+	width: 15.47%;
+}
+
+.navProgramas {
+	width: 14.27%;
+}
+
+.navTramites {
+	width: 23.47%;
+}
+
+.navPrensa {
+	width: 22.5%;
+}
+
+.navParticipa {
+	width: 23.2%;
+}
+
+#wrapperContenido {
+	width: 100%;
+}
+
+#columnaLeft {
+	width: 100%;
+}
+
+#columnaLeft img {
+	max-width: 100%;
+	height: auto;
+}
+
+#mensaje {
+	width: 95.45%;
+}
+
+#columnaRight {
+	float: none;
+	width: 100%;
+	clear: both;
+	position: relative;
+}
+
+#eventos {
+	width: 100%;
+	float: none;
+}
+
+#eventos img {
+	width: 51.72%;
+	height: auto;
+}
+
+.tituloEventosMQ {
+	text-align: left;
+	width: 200px;
+}
+
+#eventos li {
+	clear: both;
+	min-height: 200px;
+}
+
+#enlaces {
+	width: 100%;
+	float: none;
+	padding: 0;
+}
+
+#enlaces img {
+	width: 21.25%;
+	height: auto;
+}
+
+.tituloEnlacesMQ {
+	position: relative;
+	text-align: left;
+	width: 200px;
+	clear: both;
+}
+
+#footer {
+	width: 100%;
+}
+
+}
+
+
