@@ -397,3 +397,305 @@ li.impar img {
 	font-size: 12px;
 	color: #000;	
 }
+
+
+/*--------------------- MEDIA QUERIES STUFF -----------------------*/
+
+/*--------------------- BREAKPOINT 600-770px -----------------------*/
+
+@media screen and (max-width: 770px) {
+	#wrapperMain {
+		width: 97.4%;
+	}
+
+	#wrapperHeader {
+		width: 100%;
+	}
+
+	#header {
+		width: 100%;
+	}
+
+	.navOrganizacion {
+		width: 15.47%;
+	}
+
+	.navProgramas {
+		width: 14.27%;
+	}
+
+	.navTramites {
+		width: 23.47%;
+	}
+
+	.navPrensa {
+		width: 22.5%;
+	}
+
+	.navParticipa {
+		width: 23.6%;
+	}
+
+	#wrapperContenido {
+		width: 100%;
+	}
+
+	#columnaLeft {
+		width: 58.67%;
+	}
+
+	#columnaLeft img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	#mensaje {
+		width: 95.45%;
+	}
+
+	#columnaRight {
+		width: 40%;
+	}
+
+	#eventos {
+		width: 100%;
+	}
+
+	#eventos img {
+		width: 51.72%;
+		height: auto;
+	}
+
+	#enlaces {
+		width: 93.33%;
+	}
+
+	#enlaces img {
+		width: 31.66%;
+		height: auto;
+	}
+
+	#footer {
+		width: 100%;
+	}
+}
+
+
+
+/*--------------------- BREAKPOINT 420-600px -----------------------*/
+
+
+@media screen and (max-width: 600px)  {
+	#wrapperMain {
+		width: 97.4%;
+	}
+
+	#wrapperHeader {
+		width: 100%;
+	}
+
+	#header {
+		width: 100%;
+	}
+
+	#mainNav a {
+		font-size: 11px;
+	}
+
+	.navOrganizacion {
+		width: 15.47%;
+	}
+
+	.navProgramas {
+		width: 14.27%;
+	}
+
+	.navTramites {
+		width: 23.47%;
+	}
+
+	.navPrensa {
+		width: 22.5%;
+	}
+
+	.navParticipa {
+		width: 23.6%;
+	}
+
+	#wrapperContenido {
+		width: 100%;
+	}
+
+	#columnaLeft {
+		width: 100%;
+	}
+
+	#columnaLeft img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	#mensaje {
+		width: 95.45%;
+	}
+
+	#columnaRight {
+		float: none;
+		width: 100%;
+		clear: both;
+		position: relative;
+	}
+
+	#eventos {
+		width: 47.5%;
+		float: left;
+	}
+
+	#eventos img {
+		width: 51.72%;
+		height: auto;
+	}
+
+	.tituloEventosMQ {
+		text-align: left;
+		width: 200px;
+	}
+
+	#enlaces {
+		width: 47.5%;
+		float: right;
+	}
+
+	#enlaces img {
+		width: 31.66%;
+		height: auto;
+	}
+
+	.tituloEnlacesMQ {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	#footer {
+		width: 100%;
+	}
+}
+
+
+
+/*--------------------- BREAKPOINT Y FIJO A 420px -----------------------*/
+
+
+
+@media screen and (max-width: 420px) {
+	#wrapperMain {
+		width: 100%;
+		padding: 0;
+	}
+
+	#wrapperHeader {
+		width: 100%;
+	}
+
+	#header {
+		width: 100%;
+	}
+
+	#mainNav a {
+		font-size: 8px;
+	}
+
+	.navOrganizacion {
+		width: 15.47%;
+	}
+
+	.navProgramas {
+		width: 14.27%;
+	}
+
+	.navTramites {
+		width: 23.47%;
+	}
+
+	.navPrensa {
+		width: 22.5%;
+	}
+
+	.navParticipa {
+		width: 23.6%;
+	}
+
+	#wrapperContenido {
+		width: 100%;
+	}
+
+	#columnaLeft {
+		width: 100%;
+	}
+
+	#columnaLeft img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	#mensaje {
+		width: 95.45%;
+	}
+
+	#columnaRight {
+		float: none;
+		width: 100%;
+		clear: both;
+		position: relative;
+	}
+
+	#eventos {
+		width: 100%;
+		float: none;
+	}
+
+	#eventos img {
+		width: 51.72%;
+		height: auto;
+	}
+
+	.tituloEventosMQ {
+		text-align: left;
+		width: 200px;
+	}
+
+	#enlaces {
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+
+	#enlaces img {
+		width: 31.66%;
+		height: auto;
+	}
+
+	.tituloEnlacesMQ {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	#footer {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
