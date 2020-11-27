@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Movie Posters App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+	.poster {
+		max-width: 100%;
+	}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		// Añadimos el evento click al botón buscar y le indicamos que dispare la funcion getPoster callback
+		$("#buscar").click(getPoster);
+
+		$("#busqueda").keyup(function(event){
+			if(event.keyCode == 13){
+				getPoster();
+			}
+		});
+
+		$("#busqueda").focus(function(){
+			var llena = $("#posterArea").has('img').length ? true : false;
+			if(llena == false) {
+				$("#posterArea").empty();
+			}
+		});
+
+		var getPoster = function() {
+			var film = $("#busqueda").val();
+			console.log("El valor de film es: "+film);
+
+			if(film == '') {
+				$("#posterArea").html("<h2>Debes proporcionar el nombre de una pelicula.</h2>");
+			}
+			else {
+				var params = "query="+film+"&api_key=56f64113b59011d03fb580fa122a553e&callback=?"; // JSONP
+
+				$.ajax({
+					type: "GET",
+					url: "http://api.themoviedb.org/3/search/movie",
+					dataType: "jsonp",
+					data: params,
+					beforeSend: function(){
+						$.mobile.loading("show");
+					},
+					success: function(resultado){
+						$.mobile.loading("hide");
+						console.log(resultado);
+						if(resultado.total_results != 0) {
+							$("#posterArea").html('<h2>Hemos encontrado algo!</h2><img src="http://image.tmdb.org/t/p/w500'+resultado.results[0].poster_path+'" alt="'+resultado.results[0].original_title+'" class="poster" />');
+						}
+						else {
+							$("#posterArea").html('<h2>Lo sentimos, tu búsqueda no generó ningún resultado.</h2>');
+						}
+					}
+				});
+
+			}
+		}
+	});
+</script>
+
+</head>
+
+<body>
+
+<div id="movieHome" data-role="page">
+	<div data-role="header">
+		<h1>Movie Posters!</h1>
+	</div>
+
+	<div data-role="content">
+		<section id="searchForm">
+			<input type="text" placeholder="Proporciona el nombre de una pelicula" id="busqueda">
+			<button id="buscar">Buscar mi poster</button>
+		</section>
+
+		<section id="posterArea"></section>
+		<section id="moreResults"></section>
+	</div>
+</div>
+	
+</body>
+</html>
