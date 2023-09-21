@@ -1,8 +1,30 @@
 /* Comentario CSS */
 
+body {
+	/* shorthand properties */
+	background: #EAE9E4 url('../images/bgMain.jpg') top center no-repeat;
+	margin: 0;
+}
+
 #wrapper_main {
 	margin: 0 auto;
 	width: 1000px;
 	height: 3000px;
 	background: #f00;
+}
+
+#main_header {
+	height: 490px;
+	background-color: yellow;
+}
+
+#logo {
+	margin: 0;
+	width: 295px;
+	height: 140px;
+	background-color: #fff;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.64);
+	/* vendor prefix */
 }
