@@ -16,6 +16,7 @@ body {
 #main_header {
 	height: 490px;
 	background-color: yellow;
+	position: relative;
 }
 
 #logo {
@@ -27,4 +28,29 @@ body {
 	border-bottom-right-radius: 8px;
 	box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.64);
 	/* vendor prefix */
+	position: absolute;
+	top: 0px;
+	left: 40px;
 }
+
+
+
+.hidden {
+	visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
