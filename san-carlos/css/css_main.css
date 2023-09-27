@@ -9,13 +9,10 @@ body {
 #wrapper_main {
 	margin: 0 auto;
 	width: 1000px;
-	height: 3000px;
-	background: #f00;
 }
 
 #main_header {
-	height: 490px;
-	background-color: yellow;
+	height: 530px;
 	position: relative;
 }
 
@@ -31,6 +28,36 @@ body {
 	position: absolute;
 	top: 0px;
 	left: 40px;
+	z-index: 2;
+}
+
+#logo a {
+	width: 295px;
+	height: 140px;
+	display: block;
+}
+
+#social_media {
+	width: 535px;
+	height: 30px;
+	background-color: #fff;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#slider {
+	position: absolute;
+	bottom: 45px;
+	left: 0px;
+	z-index: 1;
+}
+
+#slider img {
+	border: solid #fff 12px;
+	border-radius: 8px;
 }
 
 
