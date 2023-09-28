@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 /* Comentario CSS */
 
 body {
 	/* shorthand properties */
 	background: #EAE9E4 url('../images/bgMain.jpg') top center no-repeat;
 	margin: 0;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
 #wrapper_main {
@@ -38,14 +41,31 @@ body {
 }
 
 #social_media {
-	width: 535px;
-	height: 30px;
+	width: 495px;
+	height: 23px;
 	background-color: #fff;
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	color: #333;
+  font-size: 12px;
+  padding: 2px 20px 5px 20px;
+}
+
+#social_media img {
+	vertical-align: bottom;
+}
+
+#social_media a {
+	color: inherit;
+	text-decoration: none;
+}
+
+#social_media a:hover {
+	color: #EAC52C;
+	text-decoration: underline;
 }
 
 #slider {
@@ -64,6 +84,18 @@ body {
 
 .hidden {
 	visibility: hidden;
+}
+
+.txt_light {
+	font-weight: 300;
+}
+
+.txt_semibold {
+	font-weight: 600;
+}
+
+.txt_bold {
+	font-weight: 700;
 }
 
 
