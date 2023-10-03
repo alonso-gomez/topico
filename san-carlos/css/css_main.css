@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300;400;600;700&display=swap');
 
 /* Comentario CSS */
 
@@ -78,6 +78,43 @@ body {
 #slider img {
 	border: solid #fff 12px;
 	border-radius: 8px;
+}
+
+#subtitle {
+	color: #426AA5;
+	font-size: 24px;
+	position: absolute;
+	bottom: -15px;
+	left: 0px;
+	letter-spacing: -1px;
+}
+
+#slogan {
+	font-family: Caveat;
+	color: #EAC52C;
+	font-size: 30px;
+}
+
+#wrapper_content {
+	background-color: #fff;
+	height: 3000px;
+	border-radius: 8px;
+	position: relative;
+}
+
+#main_content {
+	width: 700px;
+	height: 200px;
+	background-color: red;
+}
+
+#sidebar {
+	width: 300px;
+	height: 200px;
+	background-color: green;
+	position: absolute;
+	top: -35px;
+	right: 0px;
 }
 
 
