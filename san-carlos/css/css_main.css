@@ -109,12 +109,47 @@ body {
 }
 
 #sidebar {
-	width: 300px;
-	height: 200px;
-	background-color: green;
+	width: 260px;
+	background: rgb(234,197,44);
+	background: linear-gradient(180deg, rgba(234,197,44,1) 25%, rgba(255,255,255,1) 50%);
 	position: absolute;
 	top: -35px;
 	right: 0px;
+	padding: 35px 20px;
+}
+
+#calendar_events {
+	background-color: rgba(255,255,255,0.6);
+	padding: 10px;
+}
+
+#calendar_events p {
+	margin: 0;
+	padding: 0;
+}
+
+#calendar_events li {
+	height: 45px;
+	background: url('../images/bgFecha.png') no-repeat left;
+	padding-left: 50px;
+	position: relative;
+}
+
+.calendar_events_title {
+	
+}
+
+.calendar_events_location {
+	
+}
+
+.calendar_events_date {
+	font-size: 25px;
+	position: absolute;
+	top: 7px;
+	left: 0px;
+	width: 42px;
+	text-align: center;
 }
 
 
@@ -133,6 +168,12 @@ body {
 
 .txt_bold {
 	font-weight: 700;
+}
+
+.list_reset {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 
