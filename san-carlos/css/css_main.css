@@ -118,29 +118,51 @@ body {
 	padding: 35px 20px;
 }
 
+#calendar_title {
+	position: absolute;
+	top: 9px;
+	left: 18px;
+	font-size: 23px;
+	letter-spacing: -1px;
+}
+
+#calendar_month {
+	position: absolute;
+	top: 4px;
+	right: 19px;
+	font-size: 28px;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+	color: rgba(255,255,255,0.8);
+}
+
 #calendar_events {
 	background-color: rgba(255,255,255,0.6);
 	padding: 10px;
 }
 
-#calendar_events p {
+#calendar_title, #calendar_month, #calendar_events p {
 	margin: 0;
 	padding: 0;
 }
 
 #calendar_events li {
-	height: 45px;
+	height: 42px;
 	background: url('../images/bgFecha.png') no-repeat left;
 	padding-left: 50px;
 	position: relative;
+	padding-top: 3px;
+	font-weight: 300;
 }
 
 .calendar_events_title {
-	
+	font-size: 15px;
+	color: #EAC52C;
 }
 
 .calendar_events_location {
-	
+	font-size: 12px;
+	color: #333;
 }
 
 .calendar_events_date {
@@ -150,6 +172,16 @@ body {
 	left: 0px;
 	width: 42px;
 	text-align: center;
+}
+
+#calendar_more {
+	color: #C5342E;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+#calendar_more:hover {
+	text-decoration: underline;
 }
 
 
