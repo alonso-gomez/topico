@@ -104,8 +104,54 @@ body {
 
 #main_content {
 	width: 700px;
-	height: 200px;
-	background-color: red;
+}
+
+#main_menu {
+	height: 30px;
+	width: 700px;
+	position: absolute;
+	bottom: -50px;
+	left: 0px;
+	background-color: #426AA5;
+	z-index: 1;
+}
+
+#main_menu_content {
+	font-family: Caveat;
+	font-size: 20px;
+	color: #fff;
+	padding-left: 20px;
+}
+
+#main_menu_content li {
+	display: inline-block;
+	height: 30px;
+}
+
+#main_menu_content a {
+	color: inherit;
+	text-decoration: none;
+	padding-right: 10px;
+}
+
+#main_menu_content li ul {
+	display: none;
+}
+
+#main_menu_content li:hover ul {
+	display: block;
+	background-color: #23406b;
+
+}
+
+#main_menu_content li ul li {
+	display: block;
+	width: 200px;
+	padding: 5px;
+}
+
+#main_menu_content li ul li a {
+	color: #fff;
 }
 
 #sidebar {
@@ -116,6 +162,8 @@ body {
 	top: -35px;
 	right: 0px;
 	padding: 35px 20px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
 
 #calendar_title {
