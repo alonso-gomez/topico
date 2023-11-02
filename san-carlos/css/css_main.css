@@ -103,7 +103,17 @@ body {
 }
 
 #main_content {
-	width: 700px;
+	width: 660px;
+	padding: 90px 20px 20px 20px;
+	text-align: justify;
+}
+
+#main_content h2:first-child {
+	margin-top: 0px;
+}
+
+#main_content h2, #main_content h3, #main_content h4  {
+	color: #426aa5;
 }
 
 #main_menu {
@@ -126,6 +136,7 @@ body {
 #main_menu_content li {
 	display: inline-block;
 	height: 30px;
+	position: relative;
 }
 
 #main_menu_content a {
@@ -141,7 +152,9 @@ body {
 #main_menu_content li:hover ul {
 	display: block;
 	background-color: #23406b;
-
+	position: absolute;
+	top: 30px;
+	left: 0px;
 }
 
 #main_menu_content li ul li {
@@ -149,6 +162,11 @@ body {
 	width: 200px;
 	padding: 5px;
 }
+
+#main_menu_content li ul li:hover {
+	background: #c0e4f4;
+}
+
 
 #main_menu_content li ul li a {
 	color: #fff;
